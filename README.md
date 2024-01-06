@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Rede Social
 
-## Getting Started
+Esse projeto simula uma rede social, desenvolvido em Next
 
-First, run the development server:
+## Frontend
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Tecnologias Utilizadas
+- [Next.js](https://nextjs.org/) - Framework React para renderização do lado do servidor.
+- [TypeScript](https://www.typescriptlang.org/) - Superset JavaScript para tipagem estática.
+- [axios] - Requisições para a API
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Como Executar Localmente
+1. **Pré-requisitos:**
+    - Node.js e npm instalados.
+    - Visual Studio Code
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. **Instalação das Dependências:**
+    ```bash
+    npm install
+    ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. **Execução Local:**
+    ```bash
+    npm run dev
+    ```
+    O frontend estará acessível em (http://localhost:3000).
 
-## Learn More
+## Backend
 
-To learn more about Next.js, take a look at the following resources:
+### Repositório: https://github.com/fernandoborel/RedeSocial.Api
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Tecnologias Utilizadas
+- [.NET 8](https://dotnet.microsoft.com/) - Plataforma de desenvolvimento multiplataforma para construção de aplicativos.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Padrões de Projeto
+- [DDD (Domain-Driven Design)](https://dddcommunity.org/) - Abordagem para desenvolvimento de software baseado no domínio.
+- [SOLID](https://en.wikipedia.org/wiki/SOLID) - Princípios de design de software.
+- [Testes unitários] - Testes em todos os endpoints.
 
-## Deploy on Vercel
+### Autenticação JWT
+- A autenticação de usuário é realizada por meio de tokens JWT (JSON Web Tokens).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Como Executar Localmente
+1. **Pré-requisitos:**
+    - [.NET 8 SDK](https://dotnet.microsoft.com/download) instalado.
+    - [Outros pré-requisitos, se houver]
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+2. **Compilação e Execução:**
+    ```bash
+    dotnet build
+    dotnet run
+    ```
+    O backend estará acessível em [http://localhost:5000](http://localhost:5000).
+
+## Contribuição
+
+Sinta-se à vontade para contribuir com melhorias, correções de bugs, ou novas funcionalidades. Para contribuir, siga os passos:
+1. Faça um fork do projeto.
+2. Crie um branch para a sua feature (`git checkout -b feature/nova-feature`).
+3. Faça commit das suas mudanças (`git commit -m 'Adiciona nova feature'`).
+4. Faça push para o branch (`git push origin feature/nova-feature`).
+5. Abra um Pull Request.
