@@ -9,7 +9,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
-          <strong>Projeto Rede Social</strong>
+          <strong>Rede Social</strong>
         </a>
         <button
           className="navbar-toggler"
@@ -43,7 +43,7 @@ const Navbar = () => {
             <li className="nav-item">
               {/* Link para a página principal */}
               <Link to="/principal" className="nav-link text-white">
-                Página Principal
+                Home
               </Link>
             </li>
           </ul>
